@@ -28,12 +28,20 @@ const Pricing = () => {
             feats: ["Full-Day (12H) Coverage", "All High-Res Images", "Lifetime Online Gallery", "Leather Bound Album", "Second Photographer"], 
             not: [], 
             premium: false 
+        },
+        { 
+            name: "Majestic", 
+            price: "£10,000", 
+            tag: "World Class Experience", 
+            feats: ["3-Day Global Coverage", "Exclusive Art Book", "Private Jet Travel", "Bespoke Portfolio", "Personal Assistant"], 
+            not: [], 
+            premium: true 
         }
     ];
 
     return (
         <main>
-            <section className="page-header" style={{ backgroundImage: "url('https://picsum.photos/seed/pricing_hero/1920/1080')" }}>
+            <section className="page-header" style={{ backgroundImage: "url('/images/hero.png')" }}>
                 <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} className="page-header-content">
                     <p>Investment in Art</p>
                     <h1>Our <span>Packages</span></h1>
@@ -51,14 +59,16 @@ const Pricing = () => {
                                 transition={{ delay: idx * 0.1 }}
                                 className={`pricing-card ${p.premium ? 'premium' : ''}`}
                             >
-                                <span style={{ color: p.premium ? 'var(--accent-color)' : 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '2px' }}>{p.tag}</span>
+                                <span style={{ color: p.premium ? 'var(--accent-color)' : 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '2px', fontSize: '0.7rem', fontWeight: '700' }}>{p.tag}</span>
                                 <h3>{p.name}</h3>
                                 <div className="price">{p.price}</div>
                                 <ul>
                                     {p.feats.map((f, i) => <li key={i}><Check size={16} style={{ marginRight: '15px', color: 'var(--accent-color)' }} /> {f}</li>)}
                                     {p.not.map((f, i) => <li key={i}><X size={16} style={{ marginRight: '15px', color: 'var(--text-muted)' }} /> {f}</li>)}
                                 </ul>
-                                <Link to="/contact" className={`btn ${p.premium ? 'btn-primary' : 'btn-outline'}`} style={{ width: '100%' }}>Book {p.name}</Link>
+                                <Link to="/contact" className={`btn ${p.premium ? 'btn-primary' : 'btn-outline'}`} style={{ marginTop: '30px', width: '100%', textAlign: 'center' }}>
+                                    BOOK NOW
+                                </Link>
                             </motion.div>
                         ))}
                     </div>
