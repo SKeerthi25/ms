@@ -287,16 +287,22 @@ nav a:hover::after {
 .btn-primary {
   background: var(--accent-color);
   color: #000;
+  border: 1px solid var(--accent-color);
 }
 
 .btn-primary:hover {
-  background: var(--accent-hover);
+  background: transparent;
+  color: var(--text-main);
   transform: translateY(-5px);
 }
 
 .btn-outline {
   border: 1px solid var(--accent-color);
-  color: #fff;
+  color: var(--text-main);
+}
+
+.hero-content .btn-outline {
+  color: #ffffff !important;
 }
 
 .btn-outline:hover {
