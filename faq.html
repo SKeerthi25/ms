@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ | MS TVK LTD</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <header id="header">
+    <div class="logo"><a href="/" style="text-decoration:none; color:inherit;">MS <span>TVK LTD</span></a></div>
+    <nav id="nav">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/gallery.html">Gallery</a></li>
+        <li><a href="/services.html">Services</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/collections.html">Collections</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+        <li><a href="/pricing.html">Pricing</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="menu-btn" id="menu-btn"><i class="fa-solid fa-bars-staggered"></i></div>
+  </header>
+
+  <main>
+    <section class="page-header" style="background-image: url('https://picsum.photos/seed/faq_hero/1920/1080');">
+      <div class="page-header-content reveal">
+        <p>Your Questions</p>
+        <h1>Common <span>Queries</span></h1>
+      </div>
+    </section>
+
+    <section style="padding: var(--section-padding);">
+      <div class="container reveal" style="max-width: 800px; margin: 0 auto;">
+        <!-- Accordion -->
+        <div class="accordion">
+          <div class="accordion-item" id="faq-1">
+            <div class="accordion-header" onclick="toggleAccordion('faq-1')">
+              <h4>How do I book a session?</h4>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="accordion-content">
+              <p>You can book a session by visiting our <a href="/contact.html" style="color:var(--accent-color);">Booking Page</a> and filling out the contact form. Alternatively, you can reach out via WhatsApp or email for immediate assistance.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item" id="faq-2">
+            <div class="accordion-header" onclick="toggleAccordion('faq-2')">
+              <h4>What is the typical delivery time?</h4>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="accordion-content">
+              <p>For standard portrait sessions, the delivery time is 7-10 business days. Weddings and large-scale commercial shoots typically take 3-5 weeks for full delivery, with same-day teaser images provided for social media.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item" id="faq-3">
+            <div class="accordion-header" onclick="toggleAccordion('faq-3')">
+              <h4>Do you travel internationally?</h4>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="accordion-content">
+              <p>Yes, we are based in London but travel globally for assignments. We have extensive experience in destination weddings and international commercial campaigns.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item" id="faq-4">
+            <div class="accordion-header" onclick="toggleAccordion('faq-4')">
+              <h4>Do you provide raw unedited files?</h4>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="accordion-content">
+              <p>We pride ourselves on providing a complete, polished product. As such, we generally do not provide raw files. However, we offer high-fidelity retouched images in various formats for all your needs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    function toggleAccordion(id) {
+      const item = document.getElementById(id);
+      const isActive = item.classList.contains('active');
+      
+      // Close all other items
+      document.querySelectorAll('.accordion-item').forEach(el => {
+        el.classList.remove('active');
+      });
+
+      if (!isActive) {
+        item.classList.add('active');
+      }
+    }
+  </script>
+</body>
+</html>

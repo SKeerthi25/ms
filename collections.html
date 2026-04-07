@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Featured Collections | MS TVK LTD</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <header id="header">
+    <div class="logo"><a href="/" style="text-decoration:none; color:inherit;">MS <span>TVK LTD</span></a></div>
+    <nav id="nav">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/gallery.html">Gallery</a></li>
+        <li><a href="/services.html">Services</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/collections.html" class="active">Collections</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+        <li><a href="/pricing.html">Pricing</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="menu-btn" id="menu-btn"><i class="fa-solid fa-bars-staggered"></i></div>
+  </header>
+
+  <main>
+    <section class="page-header" style="background-image: url('https://picsum.photos/seed/collections_hero/1920/1080');">
+      <div class="page-header-content reveal">
+        <p>Featured Works</p>
+        <h1>Our <span>Masterpieces</span></h1>
+      </div>
+    </section>
+
+    <!-- Collections Banner Sections -->
+    <section class="collection-banner" style="background-image: url('/images/wedding.png'); padding: 200px 8%; position:relative; background-size: cover; background-position: center; background-attachment: fixed;">
+       <div style="position:absolute; inset:0; background:rgba(0,0,0,0.5);"></div>
+       <div class="container reveal" style="position:relative; z-index:1;">
+          <span style="color:var(--accent-color); letter-spacing:5px;">SERIES 01</span>
+          <h2 style="font-size:4rem; margin:20px 0;">The Royal Wedding Collection</h2>
+          <p style="max-width: 600px; color:var(--text-main); margin-bottom: 40px;">Deep dive into the moments of pure elegance and eternal vows. A curated selection of high-end ceremonies.</p>
+          <a href="/gallery.html?filter=wedding" class="btn btn-primary">Enter Collection</a>
+       </div>
+    </section>
+
+    <section class="collection-banner" style="background-image: url('/images/wildlife_1.png'); padding: 200px 8%; position:relative; background-size: cover; background-position: center; background-attachment: fixed;">
+       <div style="position:absolute; inset:0; background:rgba(0,0,0,0.5);"></div>
+       <div class="container reveal" style="position:relative; z-index:1; text-align: right;">
+          <span style="color:var(--accent-color); letter-spacing:5px; justify-content: flex-end;">SERIES 02</span>
+          <h2 style="font-size:4rem; margin:20px 0;">Wild Savanna Expeditions</h2>
+          <p style="max-width: 600px; color:var(--text-main); margin-bottom: 40px; margin-left: auto;">Witness the raw power of nature captured in its most majestic and vulnerable states Across Africa and Asia.</p>
+          <a href="/gallery.html?filter=wildlife" class="btn btn-primary">Enter Collection</a>
+       </div>
+    </section>
+
+    <section class="collection-banner" style="background-image: url('/images/nature_2.png'); padding: 200px 8%; position:relative; background-size: cover; background-position: center; background-attachment: fixed;">
+       <div style="position:absolute; inset:0; background:rgba(0,0,0,0.5);"></div>
+       <div class="container reveal" style="position:relative; z-index:1;">
+          <span style="color:var(--accent-color); letter-spacing:5px;">SERIES 03</span>
+          <h2 style="font-size:4rem; margin:20px 0;">Alpine Whispers & Echoes</h2>
+          <p style="max-width: 600px; color:var(--text-main); margin-bottom: 40px;">Breathtaking landscapes from the Alps to the Andes. Earth's silent conversations through light and shadow.</p>
+          <a href="/gallery.html?filter=nature" class="btn btn-primary">Enter Collection</a>
+       </div>
+    </section>
+
+  </main>
+
+  <footer>
+     <!-- Shared Footer -->
+  </footer>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

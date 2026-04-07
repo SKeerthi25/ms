@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | MS TVK LTD</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <header id="header">
+    <div class="logo"><a href="/" style="text-decoration:none; color:inherit;">MS <span>TVK LTD</span></a></div>
+    <nav id="nav">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/gallery.html">Gallery</a></li>
+        <li><a href="/services.html">Services</a></li>
+        <li><a href="/about.html" class="active">About</a></li>
+        <li><a href="/collections.html">Collections</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+        <li><a href="/pricing.html">Pricing</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="menu-btn" id="menu-btn"><i class="fa-solid fa-bars-staggered"></i></div>
+  </header>
+
+  <main>
+    <section class="page-header" style="background-image: url('https://picsum.photos/seed/about_hero/1920/1080');">
+      <div class="page-header-content reveal">
+        <p>The Journey</p>
+        <h1>Our <span>Story</span></h1>
+      </div>
+    </section>
+
+    <!-- Philosophy -->
+    <section id="philosophy" style="padding: var(--section-padding); background-color: var(--bg-secondary);">
+      <div class="container" style="max-width:1200px; margin:0 auto; display:grid; grid-template-columns: 1fr 1fr; gap:100px; align-items:center;">
+        <div class="about-img reveal" style="position:relative;">
+          <img src="https://picsum.photos/seed/philosophy_img/800/1000" alt="Photographer Journey" style="width:100%; border-radius:4px; box-shadow: var(--shadow-lg);">
+          <div style="position:absolute; bottom:-30px; right:-30px; background:var(--accent-color); padding:40px; color:#000; font-family:'Playfair Display', serif; font-size:1.5rem;">Artistry in <br>Execution</div>
+        </div>
+        <div class="about-text reveal">
+          <span style="color:var(--accent-color); letter-spacing:5px;">OUR PHILOSOPHY</span>
+          <h2 style="font-size:3.5rem; margin:20px 0;">Beyond the <br>Lens</h2>
+          <p style="color:var(--text-secondary); margin-bottom:30px;">Established in 1947, MS TVK LTD has evolved from a small studio to a global beacon of excellence in photography. We believe that every frame is a testament to the beauty of the present moment.</p>
+          <p style="color:var(--text-secondary); margin-bottom:30px;">Our mission consists of three core pillars: Integrity, Excellence, and Emotional Resonance. We don't just capture scenes; we capture souls.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Roadmap / Journey Timeline -->
+    <section style="padding: var(--section-padding);">
+      <div class="container reveal" style="text-align:center;">
+        <h2 style="font-size:3rem; margin-bottom:60px;">The Evolution</h2>
+        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap:40px;">
+          <div class="glass-card">
+            <h3 style="color:var(--accent-color);">1947</h3>
+            <p>The Genesis. First studio opened in Croydon.</p>
+          </div>
+          <div class="glass-card">
+            <h3 style="color:var(--accent-color);">1985</h3>
+            <p>Digital shift. Embracing new technologies for superior quality.</p>
+          </div>
+          <div class="glass-card">
+            <h3 style="color:var(--accent-color);">2010</h3>
+            <p>Global expansion. Serving high-end clients across 4 continents.</p>
+          </div>
+          <div class="glass-card">
+            <h3 style="color:var(--accent-color);">2026</h3>
+            <p>The Future. Pushing the boundaries of visual storytelling.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div class="logo-footer" style="font-size:2rem; margin-bottom:30px;">MS <span>TVK LTD</span></div>
+        <p style="color:var(--text-secondary); max-width:300px;">EST 1947. Capturing the essence of life's most profound moments.</p>
+      </div>
+      <div>
+        <h4 style="margin-bottom:30px; letter-spacing:2px;">SITEMAP</h4>
+        <ul style="list-style:none;">
+          <li><a href="/index.html" style="color:var(--text-muted); text-decoration:none;">Home</a></li>
+          <li><a href="/services.html" style="color:var(--text-muted); text-decoration:none;">Services</a></li>
+          <li><a href="/about.html" style="color:var(--text-muted); text-decoration:none;">About Us</a></li>
+          <li><a href="/contact.html" style="color:var(--text-muted); text-decoration:none;">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

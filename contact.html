@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | MS TVK LTD</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <header id="header">
+    <div class="logo"><a href="/" style="text-decoration:none; color:inherit;">MS <span>TVK LTD</span></a></div>
+    <nav id="nav">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/gallery.html">Gallery</a></li>
+        <li><a href="/services.html">Services</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/collections.html">Collections</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+        <li><a href="/pricing.html">Pricing</a></li>
+        <li><a href="/contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="menu-btn" id="menu-btn"><i class="fa-solid fa-bars-staggered"></i></div>
+  </header>
+
+  <main>
+    <section class="page-header" style="background-image: url('https://picsum.photos/seed/contact_hero/1920/1080');">
+      <div class="page-header-content reveal">
+        <p>Get in Touch</p>
+        <h1>Our <span>Studio</span></h1>
+      </div>
+    </section>
+
+    <section style="padding: var(--section-padding);">
+      <div class="container">
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:80px; align-items: start;">
+          <!-- Contact Details -->
+          <div class="reveal">
+            <h2 style="font-size:3rem; margin-bottom:30px;">Let's Create <br>Something Exceptional</h2>
+            <p style="color:var(--text-secondary); margin-bottom:40px;">Ready to discuss your vision? Whether it's a global campaign or an intimate session, we're here to help.</p>
+            
+            <div style="margin-bottom:30px;">
+              <h3 style="font-size:1.5rem; margin-bottom:10px; color:var(--accent-color);"><i class="fa-solid fa-location-dot" style="margin-right:20px;"></i> Address</h3>
+              <p style="color:var(--text-main); font-size: 1.1rem;">14 Thanet Place, Croydon, <br>London, CR0 1QP, UK</p>
+            </div>
+
+            <div style="margin-bottom:30px;">
+              <h3 style="font-size:1.5rem; margin-bottom:10px; color:var(--accent-color);"><i class="fa-solid fa-phone" style="margin-right:20px;"></i> Phone</h3>
+              <p style="color:var(--text-main); font-size: 1.1rem;">+44 7468 612172</p>
+            </div>
+
+            <div style="margin-bottom:30px;">
+              <h3 style="font-size:1.5rem; margin-bottom:10px; color:var(--accent-color);"><i class="fa-solid fa-envelope" style="margin-right:20px;"></i> Email</h3>
+              <p style="color:var(--text-main); font-size: 1.1rem;">muraliking1947@gmail.com</p>
+            </div>
+            
+            <!-- Google Map -->
+            <div class="glass-card" style="padding: 0; overflow: hidden; border-radius: 8px; margin-top: 50px;">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2489.1565431665476!2d-0.0906236235474776!3d51.373440771777595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760086c55cc5d5%3A0xe54d39f425867964!2s14%20Thanet%20Pl%2C%20Croydon%20CR0%201QP%2C%20UK!5e0!3m2!1sen!2sus!4v1712463740927!5m2!1sen!2sus" 
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+          </div>
+
+          <!-- Form -->
+          <div class="glass-card reveal" style="padding: 60px;">
+            <h3 style="font-size:2rem; margin-bottom:30px;">Schedule a Call</h3>
+            <form id="contact-form">
+              <div style="margin-bottom:20px;">
+                <input type="text" placeholder="Full Name" style="width:100%; height:55px; background:rgba(255,255,255,0.03); border:1px solid var(--glass-border); padding:15px; color:#fff; transition:0.3s; box-shadow: none;">
+              </div>
+              <div style="margin-bottom:20px;">
+                <input type="email" placeholder="Email Address" style="width:100%; height:55px; background:rgba(255,255,255,0.03); border:1px solid var(--glass-border); padding:15px; color:#fff; transition:0.3s; box-shadow: none;">
+              </div>
+              <div style="margin-bottom:20px;">
+                <select style="width:100%; height:55px; background:rgba(255,255,255,0.03); border:1px solid var(--glass-border); padding:15px; color:#fff;">
+                  <option value="">Select Service Type</option>
+                  <option value="event">Event Photography</option>
+                  <option value="portrait">Portrait Photography</option>
+                  <option value="commercial">Commercial Photography</option>
+                  <option value="wildlife">Wildlife Photography</option>
+                </select>
+              </div>
+              <div style="margin-bottom:30px;">
+                <textarea placeholder="Tell us about your project..." rows="5" style="width:100%; background:rgba(255,255,255,0.03); border:1px solid var(--glass-border); padding:15px; color:#fff; transition:0.3s; box-shadow: none;"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width:100%; padding:20px; font-weight:700; cursor:pointer;">Initiate Creation</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
