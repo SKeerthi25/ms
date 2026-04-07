@@ -15,10 +15,12 @@ import Testimonials from './pages/Testimonials';
 import PortfolioDetails from './pages/PortfolioDetails';
 import Philosophy from './pages/Philosophy';
 import SitemapPage from './pages/SitemapPage';
+import ScrollToTop from './components/ScrollToTop';
 
 const App = () => {
   return (
     <div className="App">
+      <ScrollToTop />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />

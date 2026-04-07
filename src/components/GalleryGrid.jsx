@@ -101,9 +101,6 @@ const Gallery = ({ initialFilter = 'all' }) => {
                                 <p style={{ color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '2px', fontSize: '0.8rem' }}>
                                     {selectedImage.category}
                                 </p>
-                                <Link to={`/portfolio-details?cat=${selectedImage.category.toLowerCase()}&idx=${currentIndex}`} className="btn btn-outline" style={{ marginTop: '20px', fontSize: '0.7rem', padding: '10px 20px' }}>
-                                    Story Behind Image
-                                </Link>
                             </div>
                         </div>
                     </motion.div>

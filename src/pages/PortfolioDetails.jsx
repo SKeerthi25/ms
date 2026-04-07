@@ -55,9 +55,9 @@ const PortfolioDetails = () => {
                                     <p style={{ color: 'var(--text-secondary)', lineHeight: 2, marginBottom: '40px' }}>{stories[idx % stories.length]}</p>
                                     
                                     <div className="glass-card" style={{ padding: '20px', fontSize: '0.8rem', letterSpacing: '2px' }}>
-                                        <p>SHOT ON: <span style={{ color: '#fff' }}>Fujifilm GFX 100S</span></p>
-                                        <p>LENS: <span style={{ color: '#fff' }}>GF 110mm f/2 R LM WR</span></p>
-                                        <p>LOCATION: <span style={{ color: '#fff' }}>Global Expeditions</span></p>
+                                        <p>SHOT ON: <span style={{ color: 'var(--text-main)' }}>Fujifilm GFX 100S</span></p>
+                                        <p>LENS: <span style={{ color: 'var(--text-main)' }}>GF 110mm f/2 R LM WR</span></p>
+                                        <p>LOCATION: <span style={{ color: 'var(--text-main)' }}>Global Expeditions</span></p>
                                     </div>
 
                                     <Link to="/gallery" className="btn btn-outline" style={{ marginTop: '50px' }}>Back to Gallery</Link>

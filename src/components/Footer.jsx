@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="footer-grid">
                 <div>
                     <div className="logo" style={{ fontSize: '2rem', marginBottom: '30px' }}>MS <span>TVK LTD</span></div>
-                    <p style={{ color: 'var(--text-secondary)', maxWidth: '300px' }}>EST 1947. Capturing the essence of life's most profound moments through the lens of excellence.</p>
+                    <p style={{ color: 'var(--text-secondary)', maxWidth: '300px' }}>Capturing the essence of life's most profound moments through the lens of excellence.</p>
                 </div>
                 <div>
                     <h4 style={{ marginBottom: '30px', letterSpacing: '2px' }}>QUICK LINKS</h4>
@@ -38,13 +38,8 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div style={{ textAlign: 'center', paddingTop: '50px', borderTop: '1px solid var(--glass-border)', display: 'flex', justifyContent: 'space-between', color: 'var(--text-muted)', fontSize: '0.75rem' }}>
+            <div style={{ textAlign: 'center', paddingTop: '50px', borderTop: '1px solid var(--glass-border)', color: 'var(--text-muted)', fontSize: '0.75rem' }}>
                 <p>© 2026 MS TVK LTD. ALL RIGHTS RESERVED.</p>
-                <div style={{ display: 'flex', gap: '30px' }}>
-                    <a href="#" style={{ color: 'inherit', textDecoration: 'none' }}>INSTAGRAM</a>
-                    <a href="#" style={{ color: 'inherit', textDecoration: 'none' }}>VIMEO</a>
-                    <a href="#" style={{ color: 'inherit', textDecoration: 'none' }}>X</a>
-                </div>
             </div>
         </footer>
     );
