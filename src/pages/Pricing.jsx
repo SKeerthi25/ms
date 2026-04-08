@@ -33,7 +33,7 @@ const Pricing = () => {
             name: "Majestic", 
             price: "£10,000", 
             tag: "World Class Experience", 
-            feats: ["3-Day Global Coverage", "Exclusive Art Book", "Private Jet Travel", "Bespoke Portfolio", "Personal Assistant"], 
+            feats: ["3-Day Global Coverage", "Exclusive Art Book", " Travel", "Bespoke Portfolio", "Personal Camera"], 
             not: [], 
             premium: true 
         }

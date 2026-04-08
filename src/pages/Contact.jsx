@@ -133,7 +133,7 @@ This message was sent via the MS TVK LTD website contact form.`
                                     placeholder="Full Name"
                                     value={formData.name}
                                     onChange={handleChange}
-                                    style={{ width: '100%', height: '55px', background: 'rgba(255,255,255,0.03)', border: '1px solid var(--glass-border)', padding: '15px', color: '#fff', borderRadius: '4px', boxSizing: 'border-box' }}
+                                    style={{ width: '100%', height: '55px', background: '#fff', border: '1px solid #000', padding: '15px', color: '#000', borderRadius: '4px', boxSizing: 'border-box' }}
                                 />
                             </div>
                             <div style={{ marginBottom: '20px' }}>
@@ -143,7 +143,7 @@ This message was sent via the MS TVK LTD website contact form.`
                                     placeholder="Email Address"
                                     value={formData.email}
                                     onChange={handleChange}
-                                    style={{ width: '100%', height: '55px', background: 'rgba(255,255,255,0.03)', border: '1px solid var(--glass-border)', padding: '15px', color: '#fff', borderRadius: '4px', boxSizing: 'border-box' }}
+                                    style={{ width: '100%', height: '55px', background: '#fff', border: '1px solid #000', padding: '15px', color: '#000', borderRadius: '4px', boxSizing: 'border-box' }}
                                 />
                             </div>
                             <div style={{ marginBottom: '20px' }}>
@@ -151,14 +151,14 @@ This message was sent via the MS TVK LTD website contact form.`
                                     name="service"
                                     value={formData.service}
                                     onChange={handleChange}
-                                    style={{ width: '100%', height: '55px', background: '#191919', border: '1px solid var(--glass-border)', padding: '0 15px', color: formData.service ? '#fff' : 'rgba(255,255,255,0.5)', borderRadius: '4px', boxSizing: 'border-box' }}
+                                    style={{ width: '100%', height: '55px', background: '#fff', border: '1px solid #000', padding: '0 15px', color: '#000', borderRadius: '4px', boxSizing: 'border-box' }}
                                 >
-                                    <option value="" style={{ background: '#191919', color: 'rgba(255,255,255,0.5)' }}>Select Service Type</option>
-                                    <option value="Event Photography" style={{ background: '#191919', color: '#fff' }}>Event Photography</option>
-                                    <option value="Portrait Photography" style={{ background: '#191919', color: '#fff' }}>Portrait Photography</option>
-                                    <option value="Commercial Photography" style={{ background: '#191919', color: '#fff' }}>Commercial Photography</option>
-                                    <option value="Wildlife Photography" style={{ background: '#191919', color: '#fff' }}>Wildlife Photography</option>
-                                    <option value="Wedding Photography" style={{ background: '#191919', color: '#fff' }}>Wedding Photography</option>
+                                    <option value="" style={{ background: '#fff', color: '#666' }}>Select Service Type</option>
+                                    <option value="Event Photography" style={{ background: '#fff', color: '#000' }}>Event Photography</option>
+                                    <option value="Portrait Photography" style={{ background: '#fff', color: '#000' }}>Portrait Photography</option>
+                                    <option value="Commercial Photography" style={{ background: '#fff', color: '#000' }}>Commercial Photography</option>
+                                    <option value="Wildlife Photography" style={{ background: '#fff', color: '#000' }}>Wildlife Photography</option>
+                                    <option value="Wedding Photography" style={{ background: '#fff', color: '#000' }}>Wedding Photography</option>
                                 </select>
                             </div>
                             <div style={{ marginBottom: '30px' }}>
@@ -168,7 +168,7 @@ This message was sent via the MS TVK LTD website contact form.`
                                     rows="5"
                                     value={formData.message}
                                     onChange={handleChange}
-                                    style={{ width: '100%', background: 'rgba(255,255,255,0.03)', border: '1px solid var(--glass-border)', padding: '15px', color: '#fff', borderRadius: '4px', boxSizing: 'border-box', resize: 'vertical' }}
+                                    style={{ width: '100%', background: '#fff', border: '1px solid #000', padding: '15px', color: '#000', borderRadius: '4px', boxSizing: 'border-box', resize: 'vertical' }}
                                 />
                             </div>
                             <button type="submit" className="btn btn-primary" style={{ width: '100%', padding: '20px', fontWeight: '700', cursor: 'pointer', fontSize: '0.9rem' }}>
