@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { MapPin, Phone, Mail, CheckCircle } from 'lucide-react';
+import { MapPin, Phone, Mail, CheckCircle, Loader2 } from 'lucide-react';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -11,12 +12,13 @@ const Contact = () => {
     });
     const [submitted, setSubmitted] = useState(false);
     const [error, setError] = useState('');
+    const [loading, setLoading] = useState(false);
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         const { name, email, service, message } = formData;
 
@@ -26,32 +28,31 @@ const Contact = () => {
         }
 
         setError('');
+        setLoading(true);
 
-        const subject = encodeURIComponent(`[MS TVK LTD] New Enquiry from ${name} — ${service}`);
-        const body = encodeURIComponent(
-`Hello MS TVK LTD,
+        try {
+            // Using your actual EmailJS IDs
+            await emailjs.send(
+                'service_2g7lfum', 
+                'template_i9y9bzm', 
+                {
+                    name: name,
+                    email: email,
+                    service: service,
+                    message: message,
+                },
+                'ja9TKCDSD-PqwFdHT'
+            );
 
-You have received a new enquiry from your website contact form.
-
----
-Name: ${name}
-Email: ${email}
-Service Required: ${service}
----
-
-Message:
-${message}
-
----
-This message was sent via the MS TVK LTD website contact form.`
-        );
-
-        window.location.href = `mailto:muraliking1947@gmail.com?subject=${subject}&body=${body}`;
-
-        // Show success message
-        setSubmitted(true);
-        setFormData({ name: '', email: '', service: '', message: '' });
-        setTimeout(() => setSubmitted(false), 5000);
+            setSubmitted(true);
+            setFormData({ name: '', email: '', service: '', message: '' });
+            setTimeout(() => setSubmitted(false), 5000);
+        } catch (err) {
+            console.error('EmailJS Error:', err);
+            setError('Failed to send message. Please try again later or email us directly.');
+        } finally {
+            setLoading(false);
+        }
     };
 
     return (
@@ -111,7 +112,7 @@ This message was sent via the MS TVK LTD website contact form.`
                                 style={{ background: 'rgba(0,200,100,0.15)', border: '1px solid #00c864', borderRadius: '8px', padding: '20px', marginBottom: '25px', display: 'flex', alignItems: 'center', gap: '15px', color: '#00c864' }}
                             >
                                 <CheckCircle size={22} />
-                                <span>Your email client has opened! Your message is ready to send to muraliking1947@gmail.com</span>
+                                <span>Thank you! Your message has been sent successfully. We'll get back to you soon.</span>
                             </motion.div>
                         )}
 
@@ -171,8 +172,31 @@ This message was sent via the MS TVK LTD website contact form.`
                                     style={{ width: '100%', background: '#fff', border: '1px solid #000', padding: '15px', color: '#000', borderRadius: '4px', boxSizing: 'border-box', resize: 'vertical' }}
                                 />
                             </div>
-                            <button type="submit" className="btn btn-primary" style={{ width: '100%', padding: '20px', fontWeight: '700', cursor: 'pointer', fontSize: '0.9rem' }}>
-                                Initiate Creation
+                            <button 
+                                type="submit" 
+                                className="btn btn-primary" 
+                                disabled={loading}
+                                style={{ 
+                                    width: '100%', 
+                                    padding: '20px', 
+                                    fontWeight: '700', 
+                                    cursor: loading ? 'not-allowed' : 'pointer', 
+                                    fontSize: '0.9rem',
+                                    display: 'flex',
+                                    justifyContent: 'center',
+                                    alignItems: 'center',
+                                    gap: '10px',
+                                    opacity: loading ? 0.7 : 1
+                                }}
+                            >
+                                {loading ? (
+                                    <>
+                                        <Loader2 className="animate-spin" size={20} />
+                                        Sending...
+                                    </>
+                                ) : (
+                                    'Initiate Creation'
+                                )}
                             </button>
                         </form>
                     </motion.div>
