@@ -89,7 +89,7 @@ const Contact = () => {
                             <h3 style={{ fontSize: '1.5rem', marginBottom: '10px', color: 'var(--accent-color)', display: 'flex', alignItems: 'center', gap: '15px' }}>
                                 <Mail /> Email
                             </h3>
-                            <p style={{ color: 'var(--text-main)', fontSize: '1.1rem' }}>muraliking1947@gmail.com</p>
+                            <p style={{ color: 'var(--text-main)', fontSize: '1.1rem' }}>muraliuk1995@gmail.com</p>
                         </div>
 
                         <div className="glass-card" style={{ padding: '0', overflow: 'hidden', borderRadius: '8px', marginTop: '30px' }}>
