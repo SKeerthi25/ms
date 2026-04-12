@@ -33,12 +33,14 @@ const Home = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
                     className="hero-content"
+                    style={{ marginTop: '-15vh' }}
                 >
-                    <p>London • Croydon • Global</p>
-                    <h1>Excellence In <span>Every Frame</span></h1>
+                    <h2 style={{ fontSize: '3.5rem', letterSpacing: '12px', color: 'var(--accent-color)', marginBottom: '10px', fontWeight: '800', fontFamily: "'Playfair Display', serif" }}>MS TVK LTD</h2>
+                    <p style={{ fontSize: '1rem', letterSpacing: '6px', color: 'rgba(255,255,255,0.7)', marginBottom: '40px', textTransform: 'uppercase' }}>London • Croydon • Global</p>
+                    <h1 style={{ marginTop: '0' }}>Excellence In <span>Every Frame</span></h1>
                     <div className="cta-group">
                         <Link to="/gallery" className="btn btn-primary">View Collection</Link>
-                        <Link to="/contact" className="btn btn-outline" style={{ marginLeft: '20px' }}>Contact Studio</Link>
+                        <Link to="/contact" className="btn btn-outline" style={{ marginLeft: '20px' }}>Contact Us</Link>
                     </div>
                 </motion.div>
             </section>

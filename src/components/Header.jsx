@@ -46,7 +46,7 @@ const Header = () => {
           </svg>
           <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
             <span style={{ fontSize: '1.4rem', fontWeight: '800', letterSpacing: '4px', color: 'var(--text-main)', lineHeight: '1', fontFamily: "'Playfair Display', serif" }}>MS <span style={{ color: 'var(--accent-color)' }}>TVK</span></span>
-            <span style={{ fontSize: '0.6rem', letterSpacing: '8px', color: 'var(--text-muted)', marginTop: '4px', fontWeight: '600' }}>STUDIOS</span>
+            <span style={{ fontSize: '0.6rem', letterSpacing: '8px', color: 'var(--text-muted)', marginTop: '4px', fontWeight: '600' }}>LTD</span>
           </div>
         </Link>
       </div>

@@ -14,7 +14,7 @@ const Footer = () => {
                     <h4 style={{ marginBottom: '30px', letterSpacing: '2px' }}>QUICK LINKS</h4>
                     <ul style={{ listStyle: 'none' }}>
                         <li style={{ marginBottom: '15px' }}><Link to="/philosophy" style={{ color: 'var(--text-muted)', textDecoration: 'none' }}>Philosophy</Link></li>
-                        <li style={{ marginBottom: '15px' }}><Link to="/about" style={{ color: 'var(--text-muted)', textDecoration: 'none' }}>About Studio</Link></li>
+                        <li style={{ marginBottom: '15px' }}><Link to="/about" style={{ color: 'var(--text-muted)', textDecoration: 'none' }}>About Us</Link></li>
                         <li style={{ marginBottom: '15px' }}><Link to="/collections" style={{ color: 'var(--text-muted)', textDecoration: 'none' }}>Collections</Link></li>
                         <li style={{ marginBottom: '15px' }}><Link to="/pricing" style={{ color: 'var(--text-muted)', textDecoration: 'none' }}>Pricing</Link></li>
                         <li style={{ marginBottom: '15px' }}><Link to="/faq" style={{ color: 'var(--text-muted)', textDecoration: 'none' }}>FAQ</Link></li>
