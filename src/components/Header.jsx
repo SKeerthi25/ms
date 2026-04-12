@@ -31,19 +31,7 @@ const Header = () => {
     <header className={`${isScrolled ? 'scrolled' : ''} ${isMenuOpen ? 'menu-active' : ''}`}>
       <div className="logo">
         <Link to="/" onClick={() => setIsMenuOpen(false)} style={{ display: 'flex', alignItems: 'center', gap: '15px', textDecoration: 'none' }}>
-          <svg width="45" height="45" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ filter: 'drop-shadow(0 0 10px rgba(212,175,55,0.3))' }}>
-            <defs>
-              <linearGradient id="premiumGold" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stopColor="#ffd700" />
-                <stop offset="50%" stopColor="#d4af37" />
-                <stop offset="100%" stopColor="#996515" />
-              </linearGradient>
-            </defs>
-            <polygon points="50,5 90,25 90,75 50,95 10,75 10,25" stroke="url(#premiumGold)" strokeWidth="3" fill="rgba(212,175,55,0.05)" />
-            <circle cx="50" cy="50" r="16" stroke="url(#premiumGold)" strokeWidth="4" />
-            <circle cx="50" cy="50" r="6" fill="url(#premiumGold)" />
-            <path d="M 50 15 L 50 34 M 50 66 L 50 85 M 15 50 L 34 50 M 66 50 L 85 50" stroke="url(#premiumGold)" strokeWidth="2" opacity="0.8" />
-          </svg>
+          <img src="/images/logo.png" alt="MS TVK LTD Logo" style={{ width: '50px', height: '50px', borderRadius: '50%', objectFit: 'cover', border: '2px solid var(--accent-color)', boxShadow: '0 0 15px rgba(212,175,55,0.3)' }} />
           <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
             <span style={{ fontSize: '1.4rem', fontWeight: '800', letterSpacing: '4px', color: 'var(--text-main)', lineHeight: '1', fontFamily: "'Playfair Display', serif" }}>MS <span style={{ color: 'var(--accent-color)' }}>TVK</span></span>
             <span style={{ fontSize: '0.6rem', letterSpacing: '8px', color: 'var(--text-muted)', marginTop: '4px', fontWeight: '600' }}>LTD</span>
