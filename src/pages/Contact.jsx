@@ -155,8 +155,21 @@ const Contact = () => {
                                     style={{ width: '100%', height: '55px', background: '#fff', border: '1px solid #000', padding: '0 15px', color: '#000', borderRadius: '4px', boxSizing: 'border-box' }}
                                 >
                                     <option value="" style={{ background: '#fff', color: '#666' }}>Select Service Type</option>
+                                    <option value="Baby Photographs" style={{ background: '#fff', color: '#000' }}>Baby Photographs</option>
+                                    <option value="Baby Photoshoot" style={{ background: '#fff', color: '#000' }}>Baby Photoshoot</option>
+                                    <option value="Birthday Parties" style={{ background: '#fff', color: '#000' }}>Birthday Parties</option>
+                                    <option value="Bump Photographs" style={{ background: '#fff', color: '#000' }}>Bump Photographs</option>
+                                    <option value="Children's Photography" style={{ background: '#fff', color: '#000' }}>Children's Photography</option>
+                                    <option value="Creative Photographic" style={{ background: '#fff', color: '#000' }}>Creative Photographic</option>
                                     <option value="Event Photography" style={{ background: '#fff', color: '#000' }}>Event Photography</option>
+                                    <option value="Family Photography" style={{ background: '#fff', color: '#000' }}>Family Photography</option>
+                                    <option value="Home Photography" style={{ background: '#fff', color: '#000' }}>Home Photography</option>
+                                    <option value="New Born Photography" style={{ background: '#fff', color: '#000' }}>New Born Photography</option>
+                                    <option value="New Born Photoshoot" style={{ background: '#fff', color: '#000' }}>New Born Photoshoot</option>
+                                    <option value="Newborn And Babies Photography" style={{ background: '#fff', color: '#000' }}>Newborn And Babies Photography</option>
+                                    <option value="Photography Sessions" style={{ background: '#fff', color: '#000' }}>Photography Sessions</option>
                                     <option value="Portrait Photography" style={{ background: '#fff', color: '#000' }}>Portrait Photography</option>
+                                    <option value="Pregnancy Photographers" style={{ background: '#fff', color: '#000' }}>Pregnancy Photographers</option>
                                     <option value="Commercial Photography" style={{ background: '#fff', color: '#000' }}>Commercial Photography</option>
                                     <option value="Wildlife Photography" style={{ background: '#fff', color: '#000' }}>Wildlife Photography</option>
                                     <option value="Wedding Photography" style={{ background: '#fff', color: '#000' }}>Wedding Photography</option>
