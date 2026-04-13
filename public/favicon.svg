@@ -1,27 +1,14 @@
 <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100" height="100" rx="20" fill="#000000" />
   <defs>
     <linearGradient id="premiumGold" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stopColor="#ffd700" />
-      <stop offset="50%" stopColor="#d4af37" />
-      <stop offset="100%" stopColor="#996515" />
+      <stop offset="0%" stop-color="#ffd700" />
+      <stop offset="50%" stop-color="#d4af37" />
+      <stop offset="100%" stop-color="#996515" />
     </linearGradient>
   </defs>
-  <!-- Outside border -->
-  <circle cx="50" cy="50" r="45" stroke="url(#premiumGold)" stroke-width="4" />
-  
-  <!-- Shutter / Aperture blades -->
-  <g stroke="url(#premiumGold)" stroke-width="2">
-    <path d="M 50 10 L 50 25 M 50 75 L 50 90" stroke-width="3" />
-    <path d="M 10 50 L 25 50 M 75 50 L 90 50" stroke-width="3" />
-    
-    <!-- Shutter geometric pattern approximating the logo -->
-    <path d="M 20 30 L 40 40 L 30 20 Z" fill="url(#premiumGold)" />
-    <path d="M 80 30 L 60 40 L 70 20 Z" fill="url(#premiumGold)" />
-    <path d="M 20 70 L 40 60 L 30 80 Z" fill="url(#premiumGold)" />
-    <path d="M 80 70 L 60 60 L 70 80 Z" fill="url(#premiumGold)" />
-    
-    <!-- Inner stylized M/S circle representation -->
-    <circle cx="50" cy="50" r="18" stroke-width="4" />
-    <path d="M 42 45 C 42 45 45 40 50 40 C 55 40 58 45 58 45 L 58 55 C 58 55 55 60 50 60 C 45 60 42 55 42 55 Z" stroke-width="3" />
-  </g>
+  <polygon points="50,10 85,30 85,70 50,90 15,70 15,30" stroke="url(#premiumGold)" stroke-width="4" fill="rgba(212,175,55,0.1)" />
+  <circle cx="50" cy="50" r="18" stroke="url(#premiumGold)" stroke-width="5" />
+  <circle cx="50" cy="50" r="8" fill="url(#premiumGold)" />
+  <path d="M 50 18 L 50 30 M 50 70 L 50 82 M 18 50 L 30 50 M 70 50 L 82 50" stroke="url(#premiumGold)" stroke-width="3" />
 </svg>
