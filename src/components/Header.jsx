@@ -34,7 +34,7 @@ const Header = () => {
           <img src="/images/logo.png" alt="MS TVK LTD Logo" style={{ width: '50px', height: '50px', borderRadius: '50%', objectFit: 'cover', border: '2px solid var(--accent-color)', boxShadow: '0 0 15px rgba(212,175,55,0.3)' }} />
           <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
             <span style={{ fontSize: '1.4rem', fontWeight: '800', letterSpacing: '4px', color: 'var(--text-main)', lineHeight: '1', fontFamily: "'Playfair Display', serif" }}>MS <span style={{ color: 'var(--accent-color)' }}>TVK</span></span>
-            <span style={{ fontSize: '0.6rem', letterSpacing: '8px', color: 'var(--text-muted)', marginTop: '4px', fontWeight: '600' }}>LTD</span>
+            <span style={{ fontSize: '0.6rem', letterSpacing: '8px', color: 'var(--text-muted)', marginTop: '4px', fontWeight: '600' }}>LTD PHOTOGRAPHY</span>
           </div>
         </Link>
       </div>

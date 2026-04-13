@@ -35,7 +35,7 @@ const Home = () => {
                     className="hero-content"
                     style={{ marginTop: '-15vh' }}
                 >
-                    <h2 style={{ fontSize: '3.5rem', letterSpacing: '12px', color: '#ffffff', marginBottom: '10px', fontWeight: '800', fontFamily: "'Playfair Display', serif", textShadow: '0 10px 30px rgba(0,0,0,0.5)' }}>MS TVK LTD</h2>
+                    <h2 style={{ fontSize: '3.5rem', letterSpacing: '12px', color: '#ffffff', marginBottom: '10px', fontWeight: '800', fontFamily: "'Playfair Display', serif", textShadow: '0 10px 30px rgba(0,0,0,0.5)' }}>MS TVK LTD PHOTOGRAPHY</h2>
                     <p style={{ fontSize: '1rem', letterSpacing: '6px', color: 'rgba(255,255,255,0.7)', marginBottom: '40px', textTransform: 'uppercase' }}>London • Croydon • Global</p>
                     <h1 style={{ marginTop: '0' }}>Excellence In <span>Every Frame</span></h1>
                     <div className="cta-group">

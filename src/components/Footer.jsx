@@ -9,7 +9,7 @@ const Footer = () => {
                 <div>
                     <div className="logo" style={{ fontSize: '2rem', marginBottom: '30px', display: 'flex', alignItems: 'center', gap: '15px' }}>
                         <img src="/images/logo.png" alt="MS TVK LTD Logo" style={{ width: '40px', height: '40px', borderRadius: '50%', border: '1px solid var(--accent-color)' }} />
-                        MS <span>TVK LTD</span>
+                        MS <span>TVK LTD PHOTOGRAPHY</span>
                     </div>
                     <p style={{ color: 'var(--text-secondary)', maxWidth: '300px' }}>Capturing the essence of life's most profound moments through the lens of excellence.</p>
                 </div>
